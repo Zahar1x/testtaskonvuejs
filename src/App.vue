@@ -30,9 +30,9 @@
               {{ problem }}
             </label>
           </div>
-
           <input class="control" type="text" placeholder="Другое" v-model="theme"
-                 v-on:click="clickOnfield()">
+                 @click="clickOnfield()">
+
         </div>
 
         <div class="third">
@@ -108,7 +108,7 @@ export default {
   methods: {
     showModal() {
       this.isModalVisible = true
-      this.checkbox = false
+      this.checkbox = null
       this.selecter = null
       this.description = null
       this.theme = null
@@ -130,7 +130,7 @@ export default {
     },
 
     clickOnfield() {
-      this.clickOnAnotherField = !this.clickOnAnotherField
+      this.theme = ''
     },
 
     sendForm() {
