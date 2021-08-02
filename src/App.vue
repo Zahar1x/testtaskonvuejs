@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container">
     <h2>Форма подачи заявки в отдел сервиса и качества</h2>
 
     <div class="form" id="form">
@@ -155,6 +155,9 @@ export default {
 </script>
 
 <style>
+.container {
+  margin-top: 5px;
+}
 .form {
   border: 1px solid gray;
   padding: 10px 20px;
